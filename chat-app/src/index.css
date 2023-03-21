@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Calibri";
+}
+
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    gap: 20px;
+    width: 70%;
+    margin: 10% auto;
+    background-color: rgb(230, 239, 247);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    height: 70vh;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+}
+
+.messages {
+    text-align: left;
+    width: 70%;
+    height: 80%;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.message {
+    padding: 7px;
+    width: 90%;
+    background-color: rgb(187, 234, 255);
+    border-radius: 9px;
+    font-weight: bolder;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.ind-messages {
+    height: 80%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.input {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 80%;
+    justify-content: center;
+    background-color: rgb(78, 92, 92);
+    height: 40px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+input {
+    width: 80%;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    min-width: 80%;
+    max-width: 80%;
+    flex: 1;
+}
+
+button {
+    background-color: rgb(212, 212, 252);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    color: #69652b;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: rgb(228, 249, 255);
+    cursor: pointer;
+}
+.date {
+    font-size: 80%;
+    opacity: 0.8;
+}
+
+.items {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 70%;
+    font-weight: bold;
+    font-size: 17px;
+    padding: 5px;
+}
+
+.active-item {
+    background-color: #1d337c;
+    color: #fff;
+    padding: 5px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.active-item::after {
+    content: attr(data-count);
+    width: 1.5em;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: azure;
+    color: #000;
+    position: absolute;
+}
+
+.item {
+    padding: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 8px;
+}
+
+.item:hover {
+    color:#291919;
+    background-color: #c1cfff;
+}
